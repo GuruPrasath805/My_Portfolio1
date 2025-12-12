@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Guru Prasath — Portfolio</title>
+
+<style>
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: #f1f5fb;
+        margin: 0;
+        padding: 0;
+        color: #222;
+    }
+
+    .container {
+        width: 92%;
+        max-width: 1300px;
+        margin: auto;
+        padding: 30px 0;
+    }
+
+    /* Header */
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+
+    .header img {
+        width: 110px;
+        height: 110px;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .subtitle {
+        font-size: 15px;
+        color: #555;
+        line-height: 20px;
+    }
+
+    .links a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: #0077ff;
+        font-weight: 600;
+    }
+
+    /* Two columns */
+    .grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 25px;
+        margin-top: 20px;
+    }
+
+    /* Cards */
+    .card {
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 18px;
+        box-shadow: 0 0 12px rgba(0,0,0,0.08);
+        line-height: 23px;
+        font-size: 15px;
+    }
+
+    .section-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 12px;
+    }
+
+    /* Tags */
+    .tags span {
+        display: inline-block;
+        background: #e8edf7;
+        padding: 7px 15px;
+        margin: 6px 6px 0 0;
+        border-radius: 20px;
+        font-size: 13px;
+        color: #333;
+        font-weight: 500;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 15px;
+        margin-top: 25px;
+        font-size: 13px;
+        opacity: 0.7;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <img src="profile.jpg.jpeg" alt="Profile">
+        <div>
+            <h1>Guru Prasath</h1>
+            <div class="subtitle">
+                B.E Computer Science Engineering · Aspiring Software/AI Engineer <br>
+                Easwari Engineering College (SRM Group) · Chennai, Tamil Nadu
+            </div>
+
+            <div class="links" style="margin-top:10px;">
+                <a href="https://www.linkedin.com/in/guru-prasath-0718b8328">LinkedIn</a>
+                <a href="https://github.com/GuruPrasath805">GitHub</a>
+                <a href="https://leetcode.com/u/GuruPrasath_A/">LeetCode</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+
+        <!-- Left Column -->
+        <div>
+
+            <!-- About -->
+            <div class="card">
+                <div class="section-title">About</div>
+                <strong>Short:</strong> Passionate CSE student focused on software engineering, AI/ML, and building real-world projects.  
+                <br><br>
+                <strong>Long:</strong> I enjoy problem-solving, developing smart systems, and learning by creating. My interests include AI, face recognition, full-stack development, and building impactful software solutions.
+            </div>
+
+            <!-- Skills -->
+            <div class="card">
+                <div class="section-title">Skills</div>
+
+                <strong>Programming</strong><br>
+                <div class="tags">
+                    <span>Python</span>
+                    <span>JavaScript</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>SQL</span>
+                </div><br>
+
+                <strong>AI / ML & Data</strong><br>
+                <div class="tags">
+                    <span>Face Recognition</span>
+                    <span>AI Basics</span>
+                    <span>Data Processing</span>
+                </div><br>
+
+                <strong>Tools</strong><br>
+                <div class="tags">
+                    <span>VS Code</span>
+                    <span>GitHub</span>
+                    <span>Linux</span>
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div class="card">
+                <div class="section-title">Projects</div>
+
+                <strong>🏦 Face Recognition Priority System for Banks</strong><br>
+                AI-based system that identifies customers and assigns priority based on transaction consistency.  
+                <br><br>
+                <b>Runs Locally:</b> http://localhost:3000  
+                <hr style="margin:15px 0; opacity:0.2;">
+
+                <strong>🚀 VisionHacks - Hackathon Project</strong><br>
+                Built a real-world problem-solving website at VisionHacks using HTML, CSS, JS.
+            </div>
+
+        </div>
+
+        <!-- Right Column -->
+        <div>
+
+            <!-- Profile Snapshot -->
+            <div class="card">
+                <div class="section-title">Profile snapshot</div>
+
+                <strong>Education:</strong> B.E CSE (2024–2028) <br>
+                <strong>Institution:</strong> Easwari Engineering College (SRM Group)
+            </div>
+
+            <!-- Experience -->
+            <div class="card">
+                <div class="section-title">Experience</div>
+
+                <strong>Student Intern - 1M1B (1 Million for 1 Billion)</strong><br>
+                2025 – Present · Remote  
+                <br>
+                Worked on sustainability & innovation projects using AI tools and data insights.
+            </div>
+
+            <!-- Certifications -->
+            <div class="card">
+                <div class="section-title">Certifications</div>
+
+                • Introduction to Modern AI - Cisco (2025) <br>
+                • MongoDB Basics for Students - MongoDB University (2025) <br>
+                • Core Java Programming - Infosys Springboard (2025) <br>
+                • Core Java Programming Revisited - Infosys Springboard (2025)
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- One-Column Final Section -->
+    <div class="card" style="margin-top:30px;">
+        <div class="section-title">Learning & Practice</div>
+
+        <p>
+            I actively practice <strong>Data Structures & Algorithms</strong> and improve my 
+            <strong>problem-solving skills</strong> on LeetCode.  
+            <br>
+            🔗 <a href="https://leetcode.com/u/GuruPrasath_A/">My LeetCode Profile</a>
+        </p>
+
+        <p>
+            I am also learning <strong>Web Development</strong> through the CodeChef Learning Platform to improve my frontend and backend skills.
+            <br>
+            🔗 <a href="https://www.codechef.com/learn">CodeChef Learning Platform</a>
+        </p>
+    </div>
+
+    <div class="footer">
+        © 2025 Guru Prasath - All rights reserved
+    </div>
+
+</div>
+
+</body>
+</html>
